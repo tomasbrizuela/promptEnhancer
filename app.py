@@ -22,7 +22,7 @@ st.subheader("Crearemos el mejor prompt para vos")
 if "gemini_response" not in st.session_state:
     st.session_state.gemini_response = ""
 
-userInput = st.text_input("Que querés saber?")
+userInput = st.text_input("Que querés saber?", placeholder="Quiero saber si es buena idea invertir en Tesla")
 
 prompt = f"Tu objetivo es tomar este texto que ingresa el usuario: {userInput}. Entendé lo que quiere el usuario y potencia, optimizá y devolvé SOLAMENTE un prompt que yo pueda directamente copiar y pegar en una IA para obtener el mejor resultado posible. Devolvé solo el prompt optimizado, sin texto adicional ni comillas"
 
